@@ -11,7 +11,7 @@ let utils = require("../../utils/constants")
 
        run (client, msg, arg) {
           try {
-               if (msg.author.id !== '501370728474476545') return;
+               if (msg.author.id !== 'your id') return;
                let code = arg.join(" ").replace(/^```(js|javascript ?\n)?|```$/gi, "")
                let out = eval(code)
                if (typeof code !== 'string') code = require("util").inspect(code, { depht: 0 })
